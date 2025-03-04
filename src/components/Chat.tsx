@@ -48,6 +48,7 @@ export default function Chat() {
           type="text"
           className="flex-grow p-2 border rounded-l-md"
           value={input}
+          placeholder="Ask me anything..."
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
           disabled={loading}
